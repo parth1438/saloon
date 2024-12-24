@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saloon Home</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f3f3f3;
+        }
+        .hero {
+            background-image: url('image.webp');
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+            color: white;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .hero h1 {
+            font-size: 4em;
+            margin: 0;
+            text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+        }
+        .hero p {
+            font-size: 1.5em;
+            margin-top: 10px;
+            margin-bottom: 20px;
+        }
+        .hero button {
+            padding: 15px 30px;
+            font-size: 1.2em;
+            color: white;
+            background-color: #ff6347;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s, transform 0.2s;
+        }
+        .hero button:hover {
+            background-color: #e5533d;
+            transform: scale(1.05);
+        }
+        .services {
+            padding: 50px 20px;
+            text-align: center;
+        }
+        .services h2 {
+            font-size: 2.5em;
+            margin-bottom: 30px;
+        }
+        .services .cards {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+        .card {
+            background: white;
+            width: 300px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            transition: transform 0.3s;
+        }
+        .card:hover {
+            transform: scale(1.05);
+        }
+        .card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+        .card h3 {
+            margin: 15px;
+            font-size: 1.5em;
+        }
+        .card p {
+            margin: 15px;
+            color: #555;
+        }
+        footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 50px;
+        }
+        #parth{
+            text-decoration: none;
+            color: #333;
+        }
+        #beard{
+            text-decoration: none;
+            color: #333;
+        }
+        #shave{
+            text-decoration: none;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <div class="hero">
+        <h1>Welcome to Our Saloon</h1>
+        <p>Your style, our passion</p>
+        <button onclick="window.location.href='#services'">Explore Services</button>
+    </div>
+
+    <div id="services" class="services">
+        <h2>Our Services</h2>
+        <div class="cards">
+            <div class="card">
+                <img src="haircut.jpg" alt="Haircut">
+                <h3  ><a href="haircut.html" id="parth" > Haircut</a></h3>
+                <p>Professional and stylish haircuts tailored for you.</p>
+            </div>
+            <div class="card">
+                <img src="shave.jpg" alt="Shaving">
+                <h3><a href="shaving.html" id="shave"> Shaving</a></h3>
+                <p>Smooth and clean shaving services for a fresh look.</p>
+            </div>
+            <div class="card">
+                <img src="beard.webp" alt="Beard Trim">
+                <h3><a href="beardtrim.html" id="beard">Beard Trim</a></h3>
+                <p>Shape and style your beard to perfection.</p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Saloon. All rights reserved.</p>
+    </footer>
+</body>
+</html>
